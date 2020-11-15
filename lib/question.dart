@@ -6,6 +6,4 @@ class Question {
     this.question = question;
     this.answer = answer;
   }
-
-
 }
