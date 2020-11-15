@@ -7,7 +7,7 @@ class QuizBrain {
   List<Question> _questions = [
     Question('You can lead a cow down stairs but not up stairs.', false),
     Question('Approximately one quarter of human bones are in the feet.', true),
-    Question('A slug\'s blood is green.', true),
+    Question('A slug\'s blood is green.', true),/*
     Question('You can lead a cow down stairs but not up stairs.', false),
     Question('Approximately one quarter of human bones are in the feet.', true),
     Question('A slug\'s blood is green.', true),
@@ -37,13 +37,17 @@ class QuizBrain {
     Question(
         'In West Virginia, USA, if you accidentally hit an animal with your'
             ' car, you are free to take it home to eat.',
-        true),
+        true),*/
   ];
 
   void nextQuestion() {
     if (_index < _questions.length - 1) {
       _index++;
     }
+  }
+
+  void resetGame() {
+    _index = 0;
   }
 
   bool isLastQuestion() {
